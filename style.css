@@ -412,5 +412,34 @@
   .platform-tab h2 {
     font-size: 13px !important;
   }
+	 .steps-container,
+  .how-it-works-steps,
+  .steps {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  .step,
+  .step-item,
+  .how-step {
+    flex: 1 !important;
+    text-align: center !important;
+    padding: 8px 4px !important;
+  }
+
+  .step p,
+  .step-item p,
+  .how-step p {
+    font-size: 11px !important;
+  }
+
+  .step h3,
+  .step-item h3,
+  .how-step h3 {
+    font-size: 12px !important;
+  }
 }
 
