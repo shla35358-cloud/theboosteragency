@@ -366,28 +366,29 @@
   .footer { border-top: 1px solid #2a2a2a; padding: 28px 40px; text-align: center; color: #333; font-size: 13px; position: relative; overflow: hidden; }
   .footer span { color: #c0c0c0; }
 
+/* Fix navbar on mobile */
 @media screen and (max-width: 768px) {
-  .platform-split {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* 2 equal columns */
-    width: 100% !important;
-    gap: 10px !important;
+  nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 16px !important;
+    flex-wrap: nowrap !important;
   }
 
-  .platform-side {
-    width: 100% !important;
-    padding: 12px 8px !important;
-    box-sizing: border-box !important;
+  .nav-links {
+    display: none !important; /* Hide middle links on mobile */
   }
 
-  .card {
-    width: 100% !important;
-    box-sizing: border-box !important;
+  .nav-logo {
+    flex-shrink: 0 !important;
   }
 
-  /* Fix tab headers so text doesn't get cut */
-  .platform-tab h2 {
+  .nav-cta {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
     font-size: 13px !important;
+    padding: 8px 14px !important;
   }
 }
 
