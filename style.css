@@ -390,5 +390,27 @@
     font-size: 13px !important;
     padding: 8px 14px !important;
   }
+	.platform-split {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* 2 equal columns */
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .platform-side {
+    width: 100% !important;
+    padding: 12px 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Fix tab headers so text doesn't get cut */
+  .platform-tab h2 {
+    font-size: 13px !important;
+  }
 }
 
